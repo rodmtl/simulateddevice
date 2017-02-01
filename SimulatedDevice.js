@@ -7,7 +7,7 @@ var connectionString = 'HostName=Rod-IoT-Hub.azure-devices.net;DeviceId=RodBot1;
 var client = DeviceClient.fromConnectionString(connectionString, Mqtt);
 
 function onWriteLine(request, response) {
-    //To print request 2
+    //To print request
     console.log(request.payload);
 
     response.send(200, 'Input was written to log.', function(err) {
